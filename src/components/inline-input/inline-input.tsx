@@ -15,9 +15,7 @@ const EditIcon = styled(Edit)`
   height: 24px;
   color: #009;
   display: none;
-  ${LabelWithIcon}:hover & {
-    display: block;
-  }
+  ${LabelWithIcon} 
 `;
 
 interface InlineInputProps {
@@ -68,7 +66,7 @@ const InlineInput:React.FunctionComponent<InlineInputProps> = ({ value, saveData
       {editable ? 
         <Input type="text" focusOnShow value={temporaryValue} onChange={setTempValue} onKeyDown={checkKeyPress} onBlur={toggleEditable} />
         : 
-        <LabelWithIcon onClick={toggleEditable}>{savedValue} <EditIcon /></LabelWithIcon>
+        <LabelWithIcon onClick={toggleEditable}>{savedValue} test stg <EditIcon /></LabelWithIcon>
       }
     </>}
     <button onClick={toggleDisabled}>{disabled ? 'en' : 'dis'}able</button>
