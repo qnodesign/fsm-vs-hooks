@@ -66,7 +66,7 @@ const InlineInput:React.FunctionComponent<InlineInputProps> = ({ value, saveData
       {editable ? 
         <Input type="text" focusOnShow value={temporaryValue} onChange={setTempValue} onKeyDown={checkKeyPress} onBlur={toggleEditable} />
         : 
-        <LabelWithIcon onClick={toggleEditable}>{savedValue} test stg <EditIcon /></LabelWithIcon>
+        <LabelWithIcon onClick={toggleEditable}>{savedValue} test stg more stg<EditIcon /></LabelWithIcon>
       }
     </>}
     <button onClick={toggleDisabled}>{disabled ? 'en' : 'dis'}able</button>
